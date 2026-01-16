@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización Sitio 08 – Mingamos</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body { background-color: var(--light-color); }
+        .cotizacion-wrapper {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            color: var(--text-color);
+        }
+        .cotizacion-header h1 {
+            margin-bottom: 0.25rem;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+        .cotizacion-header p {
+            margin-top: 0;
+            font-size: 1rem;
+            color: var(--primary-color);
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .details-column {
+            flex: 1 1 55%;
+            min-width: 300px;
+        }
+        .image-column {
+            flex: 1 1 35%;
+            min-width: 250px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .image-column img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            padding: 0.75rem 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+        .total-row td {
+            font-weight: bold;
+        }
+        .footnote {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        /* Grid of images for the quotation */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .image-grid img {
+            width: 48%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="cotizacion-wrapper">
+        <div class="cotizacion-header">
+            <h1>Cotización Sitio N°&nbsp;08</h1>
+            <p>Parque Restauración&nbsp;Puntra – Curanto</p>
+        </div>
+        <p><strong>Cliente:</strong> Sandra&nbsp;Mayorga&nbsp;Valencia</p>
+        <p><strong>Teléfono:</strong> +56&nbsp;9&nbsp;3436&nbsp;1068</p>
+        <p><strong>Creación del presupuesto:</strong> 14&nbsp;de&nbsp;enero&nbsp;de&nbsp;2026</p>
+        
+        <div class="flex-container">
+            <div class="details-column">
+                <h2>Detalle del sitio</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ítem</th>
+                            <th>Descripción</th>
+                            <th>UF</th>
+                            <th>CLP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sitio&nbsp;08 – Curanto</td>
+                            <td>Parcela de 5.000&nbsp;m² cerca de río navegable. Bosque nativo, acceso al monte profundo y antiguo, sendero y deslinde con la histórica ex&nbsp;línea ferroviaria. Reforestación y restauración. Accesos a río&nbsp;Puntra por servidumbres y senderos autodidácticos. Camino 4×2 listo. Plan de manejo CONAF aprobado.</td>
+                            <td>358,25</td>
+                            <td>$14.240.322</td>
+                        </tr>
+                        <tr>
+                            <td>Descuento promoción</td>
+                            <td>Descuento promocional por reserva</td>
+                            <td>−300,00</td>
+                            <td></td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="2">Total</td>
+                            <td>58,25&nbsp;UF</td>
+                            <td>$11.924.904</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footnote">
+                    Este presupuesto caduca el 25&nbsp;de&nbsp;enero&nbsp;de&nbsp;2026.<br>
+                    ¿Tienes alguna pregunta? Ponte en contacto con nosotros:<br>
+                    <strong>Mingamos</strong><br>
+                    Apoquindo&nbsp;6550 oficina&nbsp;205, Santiago, Metropolitana&nbsp;7508050, Chile
+                </p>
+            </div>
+            <div class="image-column">
+                <div class="image-grid">
+                    <img src="assets/images/1.jpeg" alt="Imagen 1 del sitio">
+                    <img src="assets/images/2.jpeg" alt="Imagen 2 del sitio">
+                    <img src="assets/images/3.jpeg" alt="Imagen 3 del sitio">
+                    <img src="assets/images/4.jpeg" alt="Imagen 4 del sitio">
+                    <img src="assets/images/5.jpeg" alt="Imagen 5 del sitio">
+                    <img src="assets/images/6.jpeg" alt="Imagen 6 del sitio">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
